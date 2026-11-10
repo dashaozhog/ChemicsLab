@@ -3,6 +3,7 @@ package com.example.chemicslab
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -18,6 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 @Preview
 @Composable
 fun MainScreen() {
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -36,4 +38,11 @@ fun MainScreen() {
         }
     )
 
+}
+
+@Composable
+fun FilledButtonExample(onClick: () -> Unit) {
+    Button(onClick = { onClick() }) {
+        Text("Filled")
+    }
 }
