@@ -3,6 +3,7 @@ package com.example.chemicslab.navigation
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Person
@@ -32,7 +33,7 @@ private data class TopLevelTab(val route: String, val label: String, val icon: I
 
 private val studentTabs = listOf(
     TopLevelTab(Routes.CATALOG, "Experiments", Icons.Default.Home),
-    TopLevelTab(Routes.JOURNAL, "Journal", Icons.Default.List),
+    TopLevelTab(Routes.JOURNAL, "Journal", Icons.AutoMirrored.Filled.List),
     TopLevelTab(Routes.SETTINGS, "Settings", Icons.Default.Settings),
 )
 private val teacherTab = TopLevelTab(Routes.TEACHER, "Teacher", Icons.Default.Person)
